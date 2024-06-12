@@ -19,5 +19,15 @@ func_addci(est, low, hi, dec)
 A character string with the estimate and confidence intervals.
 }
 \description{
-Add Confidence Intervals
+This function formats an estimate with its confidence interval
+(lower and upper bounds) and rounds them to a specified number of decimal places.
+}
+\examples{
+# Basic usage
+func_addci(10.123, 9.456, 10.789, 2)
+
+# Using with dplyr to create a new formatted variable
+library(dplyr)
+df <- tibble(est = c(10.123, 20.456), low = c(9.456, 19.789), hi = c(10.789, 21.123))
+df <- df |> mutate(ci = func_addci(est, low, hi, 2))
 }

@@ -17,5 +17,15 @@ func_count_pct(count, pct, dec)
 A character string with the formatted count and percentage.
 }
 \description{
-Format Count and Percentage
+This function formats a count and percentage, rounding the percentage
+to a specified number of decimal places.
+}
+\examples{
+# Basic usage
+func_count_pct(1500, 75.1234, 2)
+
+# Using with dplyr to create a new formatted variable
+library(dplyr)
+df <- tibble(count = c(1500, 2500), pct = c(75.1234, 85.5678))
+df <- df |> mutate(count_pct = func_count_pct(count, pct, 2))
 }
