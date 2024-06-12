@@ -1,6 +1,6 @@
 Package: formatinator
 Type: Package
-Title: The formatinator converts numeric values into formatted string values
+Title: Works with diagnosis code fields and formats numeric values
 Version: 0.1.0
 Author: Jason L. Salemi, PhD, MPH, FACE
 Maintainer: Jason L. Salemi, PhD, MPH, FACE <jsalemi@usf.edu>
@@ -9,6 +9,8 @@ Description: This package includes basic functions for converting numeric values
 License: GPL-3
 Imports:
     dplyr,
+    janitor,
+    purrr,
     stringr,
     tibble
 Suggests:

@@ -26,6 +26,6 @@ func_count_pct(1500, 75.1234, 2)
 
 # Using with dplyr to create a new formatted variable
 library(dplyr)
-df <- tibble(count = c(1500, 2500), pct = c(75.1234, 85.5678))
-df <- df |> mutate(count_pct = func_count_pct(count, pct, 2))
+df <- tibble::tibble(count = c(1500, 2500), pct = c(75.1234, 85.5678))
+df <- df |> dplyr::mutate(count_pct = func_count_pct(count, pct, 2))
 }

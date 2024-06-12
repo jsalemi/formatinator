@@ -24,6 +24,6 @@ func_myround(12345.6789, 2)
 
 # Using with dplyr to create a new formatted variable
 library(dplyr)
-df <- tibble(value = c(12345.6789, 98765.4321))
-df <- df |> mutate(formatted_value = func_myround(value, 2))
+df <- tibble::tibble(value = c(12345.6789, 98765.4321))
+df <- df |> dplyr::mutate(formatted_value = func_myround(value, 2))
 }

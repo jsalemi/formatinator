@@ -28,6 +28,6 @@ func_addci(10.123, 9.456, 10.789, 2)
 
 # Using with dplyr to create a new formatted variable
 library(dplyr)
-df <- tibble(est = c(10.123, 20.456), low = c(9.456, 19.789), hi = c(10.789, 21.123))
-df <- df |> mutate(ci = func_addci(est, low, hi, 2))
+df <- tibble::tibble(est = c(10.123, 20.456), low = c(9.456, 19.789), hi = c(10.789, 21.123))
+df <- df |> dplyr::mutate(ci = func_addci(est, low, hi, 2))
 }
