@@ -1,12 +1,21 @@
 Package: formatinator
 Type: Package
-Title: What the Package Does (Title Case)
+Title: The formatinator converts numeric values into formatted string values
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jason L. Salemi, PhD, MPH, FACE
+Maintainer: Jason L. Salemi, PhD, MPH, FACE <jsalemi@usf.edu>
+Description: This package includes basic functions for converting numeric values into formatted string values.
+    It was created just to practice creating an uploading an R package.
+License: GPL-3
+Imports:
+    dplyr,
+    stringr,
+    tibble
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.1
+Config/testthat/edition: 3

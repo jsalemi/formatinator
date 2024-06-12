@@ -7,6 +7,9 @@
 #' @param num The number to be rounded.
 #' @param dec The number of decimal places.
 #' @return A character string of the formatted number.
+#' @import dplyr
+#' @importFrom stringr str_trim
+#' @importFrom tibble tibble
 #' @export
 #' @examples
 #' # Basic usage
@@ -32,6 +35,9 @@ func_myround <- function(num, dec) {
 #' @param hi The upper bound of the interval.
 #' @param dec The number of decimal places.
 #' @return A character string with the estimate and confidence intervals.
+#' @import dplyr
+#' @importFrom stringr str_trim
+#' @importFrom tibble tibble
 #' @export
 #' @examples
 #' # Basic usage
@@ -59,6 +65,9 @@ func_addci <- function(est, low, hi, dec) {
 #' @param hi The upper bound of the interval.
 #' @param dec The number of decimal places.
 #' @return A character string with the estimate and confidence intervals.
+#' @import dplyr
+#' @importFrom stringr str_trim
+#' @importFrom tibble tibble
 #' @export
 #' @examples
 #' # Basic usage
@@ -86,6 +95,9 @@ func_addci_dash <- function(est, low, hi, dec) {
 #' @param hi The upper bound of the interval.
 #' @param dec The number of decimal places.
 #' @return A character string with the estimate and confidence intervals.
+#' @import dplyr
+#' @importFrom stringr str_trim
+#' @importFrom tibble tibble
 #' @export
 #' @examples
 #' # Basic usage
@@ -112,6 +124,9 @@ func_addci_to <- function(est, low, hi, dec) {
 #' @param pct The percentage.
 #' @param dec The number of decimal places for the percentage.
 #' @return A character string with the formatted count and percentage.
+#' @import dplyr
+#' @importFrom stringr str_trim
+#' @importFrom tibble tibble
 #' @export
 #' @examples
 #' # Basic usage
